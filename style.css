@@ -1,0 +1,330 @@
+:root{
+    --color-pink: #E79796;
+    --color-white: #F5F5F5;
+    --color-yellow: #FAF5E6;
+    --background-pink: #FEE9E5;
+    --background-green: #DCECE5;
+    --text-green: #62928A;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "CormorantInfant", serif;
+    font-weight: bold;
+}
+header{
+    height: 200px;
+    background-color: var(--background-pink);
+}
+.background_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+main{
+    height: 50vh;
+    position: relative;
+    width: 100%;
+    background-image: url('../img/main_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header{
+    margin: auto;
+    color: var(--color-pink);
+    font-size: 60px;
+    text-align: center;
+}
+.main-text{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-family: 'CormorantInfant', serif;
+    color: var(--color-white);
+    font-size: 28px;
+    margin: 0;
+
+}
+/*.main-text::after*/
+.main-aftertext{
+    position: absolute;
+    left:40px;
+    top: 58px;
+    display: inline-block;
+    height: 36px;
+    content: url("../img/Vector 20.svg");
+}
+.main-button{
+    font-family: "CormorantInfant", serif;
+    top: 150px;
+    left: 90px;
+    position: absolute;
+    display: block;
+    height: 25px;
+    width: 120px;
+    border-radius: 40px;
+    background-color: rgba(245,245,245,50%);
+    color: var(--color-pink);
+    border: var(--color-white) 2px solid;
+    text-align: center;
+    padding: 10px 5vw;
+    margin: 0;
+    text-decoration: none;
+    align-content: center;
+    font-size: 25px;
+}
+.main-button:hover{
+    cursor: pointer;
+}
+.main-button:active{
+    cursor: grab;
+}
+.contacts-header{
+    color: var(--color-pink);
+    align-content: center;
+    font-family: "CormorantInfant", serif;
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+}
+.about{
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--background-pink);
+    height: 950px;
+
+}
+.about-wrapper{
+    position: relative;
+    height: 90%    ;
+}
+.about-header::before{
+    content: url("/img/about/about-header-logo.png");
+    margin-right: 10px;
+}
+.about-text{
+    color: var(--color-pink);
+    width: 40vw;
+    font-size: 24px;
+}
+#about-text1{
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.about-img{
+    position: absolute;
+    right: 50px;
+    top:40px;
+}
+.about-list{
+    color: var(--color-pink);
+    list-style: none;
+    text-align: right;
+    font-size: 24px;
+    margin-top: 34px;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}
+.about-background--img{
+    position: absolute;
+    left: 20px;
+    width: 192px;
+    bottom: 220px;
+}
+.services{
+    background-color: var(--color-yellow);
+    position: relative;
+    height: 900px;
+    padding: 30px 0;
+}
+.line{
+    height: 8px;
+    background-color: var(--color-pink);
+}
+.services-header{
+    margin-bottom: 20px;
+}
+.services-list{
+    color: var(--color-pink);
+    font-size: 24px;
+    width: 40vw;
+    padding-left: 40px;
+    list-style: none;
+}
+#services-list1{
+    text-align: left;
+}
+#services-list2{
+    text-align: right;
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+.services-img{
+    width: 270px;
+    top: 230px;
+    right: 150px;
+    position: absolute;
+}
+.services-paws{
+    position: absolute;
+    display: block;
+    width: 40vw;
+    margin: auto;
+    color: var(--color-pink);
+}
+#services-paws1{
+    left: 70px;
+    bottom: 80px;
+}
+#services-paws2{
+    right: 100px;
+    bottom: 200px;
+}
+/*COLLEAGUE*/
+.colleague{
+    background-color: var(--background-green);
+    padding: 40px 30px 50px 30px;
+    position: relative;
+    height: 1050px;
+    font-size: 24px;
+    color: var(--text-green);
+}
+.colleague-text{
+    position: absolute;
+    color: var(--text-green);
+    margin: 0;
+    font-size: 24px;
+}
+#colleague-text1{
+    top: 40px;
+    left: 40px;
+    width: 35%;
+}
+#colleague-text2{
+    width: 60%;
+    top: 470px;
+    right: 70px;
+    text-align: right;
+}
+.colleague-img{
+    position: absolute;
+    right: 70px;
+    top: 40px;
+}
+.colleague-paws{
+    display: block;
+}
+.colleague-wrapper{
+    position: absolute;
+    display: flex;
+    top: 550px;
+    justify-content: space-around;
+    width: 90vw;
+    height: 150px;
+}
+#colleague-paws1,#colleague-paws3{
+    margin-top: 30px;
+}
+.colleague-list{
+    list-style: none;
+    position: absolute;
+    bottom: 90px;
+    left: 40px;
+    padding: 0;
+}
+.colleague-subtext{
+    position: absolute;
+    bottom: 20px;
+    font-size: 20px;
+    left: 45px;
+}
+.colleague-background{
+    position: absolute;
+    bottom: 80px;
+    left: 570px;
+}
+/*CERTIFICATES*/
+.certificates{
+    background-color: #FED5CC;
+    padding-top:30px;
+}
+.certificates-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 40px auto auto;
+    row-gap: 30px;
+}
+.certificates-img{
+    display: block;
+    margin: auto;
+}
+/*REVIEWS*/
+.reviews{
+    background-color: var(--color-yellow);
+    padding-top: 50px;
+}
+.reviews-circle-row{
+    position: relative;
+    height: 450px;
+}
+.reviews-circle{
+    border-radius: 100%;
+    border: 3px solid var(--color-pink);
+    height: 300px;
+    width: 300px;
+}
+.reviews-logo{
+    display: block;
+    margin: 15px auto 0 auto;
+}
+.reviews-review{
+    display: block;
+    margin: 20px auto;
+}
+#circle1{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    background-color: var(--background-pink);
+}
+#circle2{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-yellow);
+}
+#circle3{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background-color: var(--background-green);
+}
+.reviews-row2{
+    margin: 70px 0;
+    display: flex;
+    justify-content: space-around;
+}
+/*CONTACTS*/
+.contacts{
+    height: 700px;
+    margin: 150px 0 200px 0;
+}
+.contacts-header{
+    color: var(--color-pink);
+    font-size: 60px;
+}
+.contacts-header,.contacts-wrapper{
+    margin-bottom: 100px;
+}
